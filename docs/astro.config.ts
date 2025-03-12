@@ -21,6 +21,23 @@ export default defineConfig({
 			sidebar: [],
 			pagefind: false,
 			credits: true,
+			head: [
+				{
+					tag: 'meta',
+					attrs: {
+						property: 'og:image',
+						content: 'https://delucis.github.io/astro-ai-robots-txt/og.png',
+					},
+				},
+				{
+					tag: 'meta',
+					attrs: {
+						property: 'og:image:alt',
+						content:
+							'astro-ai-robots-txt is an Astro integration to disallow AI scrapers in robots.txt',
+					},
+				},
+			],
 		}),
 	],
 });
