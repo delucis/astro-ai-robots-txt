@@ -1,0 +1,73 @@
+---
+title: astro-ai-robots-txt
+description: Block AI scrapers in the `robots.txt` for your Astro site
+template: splash
+hero:
+  title: Block AI bots
+  tagline: This is an Astro integration to disallow AI scrapers in <code>robots.txt</code>
+  image:
+    html: ⛔️
+head:
+  - tag: title
+    content: astro-ai-robots-txt
+  - tag: style
+    content: >-
+      body { --sl-content-width: 50rem; }
+      main { font-family: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif; }
+      .page {
+        .header { position: static }
+        .title-wrapper { display: none }
+        .right-group { display: flex; margin-inline-start: auto }
+        .main-frame { padding-top: 0 }
+      }
+      .hero { --size: min(9rem, calc(5rem + 6vw)); }
+      .hero-html {
+        font-size: var(--size);
+        justify-content: center;
+        z-index: -1;
+        order: 0 !important;
+      }
+      @media (min-width: 30rem) {
+        .hero { grid-template-columns: var(--size) auto !important }
+        .hero .copy {
+          align-items: flex-start;
+          text-align: start;
+        }
+      }
+---
+
+## Prerequisites
+
+You will need to have an Astro project set up.
+If you don't have one yet, you can follow the [“Install Astro”](https://docs.astro.build/en/install-and-setup/) guide to create one.
+
+## Installation
+
+import { Steps, Tabs, TabItem } from '@astrojs/starlight/components';
+import { PackageManagers } from 'starlight-package-managers';
+
+<Steps>
+
+1. `astro-ai-robots-txt` is an Astro [integration](https://docs.astro.build/en/guides/integrations-guide/).
+   Install it by running the following command in your terminal:
+
+   <PackageManagers type="exec" pkg="astro" args="add astro-ai-robots-txt" />
+
+2. That’s it.
+   When you build your site, the integration will add a rule to `robots.txt` to disallow a known list of AI crawlers.
+
+</Steps>
+
+## How does this work?
+
+This integration sources a list of known AI crawlers from the [`ai-robots-txt`](https://github.com/ai-robots-txt/ai.robots.txt/) project on GitHub.
+These are added to a `robots.txt` file in your site’s build output, telling the crawlers you don’t want them to access your site.
+
+If you already have a `robots.txt` file in your Astro project, the blocklist will be added to that.
+
+## Does this work?
+
+Yes and no.
+A `robots.txt` file cannot guarantee no-one will scrape your site, but it is a standard approach to controlling scraping behaviour that some AI bots do respect.
+
+The `ai-robots-txt` repository contains more about [which crawlers respect `robots.txt`](https://github.com/ai-robots-txt/ai.robots.txt/blob/main/table-of-bot-metrics.md) and [what else you can do to block crawlers](https://github.com/ai-robots-txt/ai.robots.txt/blob/main/FAQ.md#what-can-we-do-if-a-bot-doesnt-respect-robotstxt).
