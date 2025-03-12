@@ -7,6 +7,14 @@ hero:
   tagline: This is an Astro integration to disallow AI scrapers in <code>robots.txt</code>
   image:
     html: ⛔️
+  actions:
+    - text: Star on GitHub
+      link: https://github.com/delucis/astro-ai-robots-txt
+      icon: github
+    - text: View on npm
+      link: https://www.npmjs.com/package/astro-ai-robots-txt
+      icon: seti:npm
+      variant: minimal
 head:
   - tag: title
     content: astro-ai-robots-txt
@@ -20,18 +28,26 @@ head:
         .right-group { display: flex; margin-inline-start: auto }
         .main-frame { padding-top: 0 }
       }
-      .hero { --size: min(9rem, calc(5rem + 6vw)); }
-      .hero-html {
-        font-size: var(--size);
-        justify-content: center;
-        z-index: -1;
-        order: 0 !important;
+      .hero {
+        --size: min(9rem, calc(5rem + 6vw));
+        .sl-link-button { border-radius: 0.5em; }
+        .hero-html {
+          font-size: var(--size);
+          line-height: 1;
+          align-self: start;
+          justify-content: center;
+          z-index: -1;
+          order: 0 !important;
+        }
       }
       @media (min-width: 30rem) {
-        .hero { grid-template-columns: var(--size) auto !important }
-        .hero .copy {
-          align-items: flex-start;
-          text-align: start;
+        .hero {
+          grid-template-columns: var(--size) auto !important;
+          .copy {
+            align-items: flex-start;
+            text-align: start;
+          }
+          .actions { justify-content: flex-start; }
         }
       }
 ---
