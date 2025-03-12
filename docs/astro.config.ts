@@ -10,9 +10,6 @@ export default defineConfig({
 		astroAiRobotsTxt(),
 		starlight({
 			title: 'astro-ai-robots-txt',
-			social: {
-				github: 'https://github.com/delucis/astro-ai-robots-txt',
-			},
 			editLink: {
 				baseUrl: 'https://github.com/delucis/astro-ai-robots-txt/edit/main/docs/',
 			},
