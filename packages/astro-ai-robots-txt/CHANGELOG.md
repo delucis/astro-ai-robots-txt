@@ -1,5 +1,11 @@
 # astro-ai-robots-txt
 
+## 0.1.2
+
+### Patch Changes
+
+- [#4](https://github.com/delucis/astro-ai-robots-txt/pull/4) [`da6b0d0`](https://github.com/delucis/astro-ai-robots-txt/commit/da6b0d0dc68689a00230bd414c35512b217cd87f) Thanks [@delucis](https://github.com/delucis)! - Updates robots.txt to ai.robots.txt v1.27
+
 ## 0.1.1
 
 ### Patch Changes
