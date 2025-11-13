@@ -9,10 +9,10 @@
 		".": "./index.ts"
 	},
 	"devDependencies": {
-		"astro": "^5.14.3"
+		"astro": "^5.15.6"
 	},
 	"peerDependencies": {
-		"astro": "^5.14.3"
+		"astro": "^5.15.6"
 	},
 	"keywords": [
 		"withastro",
