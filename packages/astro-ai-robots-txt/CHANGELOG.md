@@ -1,5 +1,11 @@
 # astro-ai-robots-txt
 
+## 0.1.3
+
+### Patch Changes
+
+- [#11](https://github.com/delucis/astro-ai-robots-txt/pull/11) [`116f308`](https://github.com/delucis/astro-ai-robots-txt/commit/116f30801953c23a260ccd25d83dc779c9e05cf9) Thanks [@delucis](https://github.com/delucis)! - Updates robots.txt with the [latest changes from `ai.robots.txt`](https://github.com/ai-robots-txt/ai.robots.txt/commit/aa8519ec107d7cfa29b03005c9176708e1269965)
+
 ## 0.1.2
 
 ### Patch Changes
