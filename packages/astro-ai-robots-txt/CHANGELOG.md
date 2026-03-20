@@ -1,5 +1,11 @@
 # astro-ai-robots-txt
 
+## 0.1.4
+
+### Patch Changes
+
+- [`c68ba35`](https://github.com/delucis/astro-ai-robots-txt/commit/c68ba359785300b00909a7d43e9598abd9871c81) Thanks [@delucis](https://github.com/delucis)! - Adds support for Astro 6
+
 ## 0.1.3
 
 ### Patch Changes
