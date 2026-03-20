@@ -12,7 +12,7 @@
 		"astro": "^5.15.9"
 	},
 	"peerDependencies": {
-		"astro": "^5.15.9"
+		"astro": "^5.15.9 || ^6.0.0"
 	},
 	"keywords": [
 		"withastro",
