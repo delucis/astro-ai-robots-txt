@@ -12,7 +12,7 @@
 		"astro": "^5.18.1"
 	},
 	"peerDependencies": {
-		"astro": "^5.15.9 || ^6.0.0"
+		"astro": "^5.15.9 || ^6.0.0 || ^7.0.0"
 	},
 	"keywords": [
 		"withastro",
@@ -21,9 +21,6 @@
 		"utils",
 		"robots.txt"
 	],
-	"engines": {
-		"node": "^18.17.1 || ^20.3.0 || >=21.0.0"
-	},
 	"publishConfig": {
 		"access": "public"
 	},
