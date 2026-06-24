@@ -22,6 +22,7 @@
 	},
 	"scripts": {
 		"ci-version": "changeset version && pnpm install --no-frozen-lockfile",
-		"ci-publish": "changeset publish"
+		"ci-publish": "changeset publish",
+		"test": "pnpm -F ./docs build && (if [ ! -f docs/dist/robots.txt ]; then echo 'Missing robots.txt'; exit 1; fi)"
 	}
 }
