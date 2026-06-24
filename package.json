@@ -5,9 +5,6 @@
 	"description": "Block AI scrapers in the `robots.txt` for your Astro site",
 	"author": "delucis",
 	"type": "module",
-	"engines": {
-		"node": "^18.17.1 || ^20.3.0 || >=21.0.0"
-	},
 	"packageManager": "pnpm@9.6.0",
 	"private": true,
 	"homepage": "https://delucis.github.io/astro-ai-robots-txt/",
