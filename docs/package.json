@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@astrojs/starlight": "^0.42.10",
-    "astro": "^7.4.10",
+    "astro": "^7.4.11",
     "astro-ai-robots-txt": "workspace:*",
     "sharp": "^0.35.5",
     "starlight-package-managers": "^0.13.0",
